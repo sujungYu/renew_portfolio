@@ -85,20 +85,20 @@ export default {
   /* font-family: 'Noto Sans KR', sans-serif; */
   text-align: center;
   font-size: 3.8rem;
-  color: #eb4747;
+  color: rgb(79, 152, 202);
 }
 .text-container h3 {
   margin: 1vh auto;
   text-align: center;
   font-size: 2rem;
-  color: black;
+  color: rgb(39, 39, 39);
 }
 .end {
-  color: black;
+  color: rgb(39, 39, 39);
 }
 .name {
   /* color: #eb4747; */
-  color: black;
+  color: rgb(39, 39, 39);
   /* color: #ed8c3d; */
   /* -webkit-text-stroke: 2px black; */
   position: relative;
@@ -115,7 +115,7 @@ export default {
   width: 100%;
   height: 10px;
   opacity: 1;
-  background-color: #eb4747;
+  background-color: rgb(79, 152, 202);
   animation: typing 1s 2s backwards;
 }
 @keyframes typing {
