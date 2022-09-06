@@ -1,5 +1,5 @@
 <template>
-  <div class="text">
+  <div class="headline-container">
     <h1>
       <slot></slot>
     </h1>
@@ -11,21 +11,24 @@ export default {};
 </script>
 
 <style scoped>
-.text {
-  position: relative;
-  top: 10vh;
-  text-align: center;
-  width: 50vw;
-  margin: 0 auto;
-  font-size: 2rem;
-  font-family: 'Signika Negative', sans-serif;
-  z-index: 2;
+.headline-container h1 {
+  display: inline-block;
+  font-size: 6rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  /* border-bottom: px solid rgb(79, 152, 202); */
 }
-h1 {
-  width: 100%;
-  margin: 0 auto;
-  background-color: white;
-  border: 3px solid black;
-  border-radius: 15px;
+.headline-container h1::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 110px;
+  width: 90%;
+  height: 8px;
+  /* opacity: 1; */
+  background-color: rgb(79, 152, 202);
+  animation: typing 1s 2s backwards;
 }
 </style>

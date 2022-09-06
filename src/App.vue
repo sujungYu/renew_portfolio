@@ -10,7 +10,7 @@
       <div class="views-container" id="skills">
         <!-- <introduce></introduce> -->
         <skills></skills>
-        <!-- <projects></projects> -->
+        <projects></projects>
       </div>
     </div>
   </div>
@@ -21,9 +21,9 @@ import TableContent from './components/TableContent.vue';
 import Banner from './components/views/Banner.vue';
 // import Introduce from './components/views/Introduce.vue';
 import Skills from './components/views/Skills.vue';
-// import Projects from './components/views/Projects.vue';
+import Projects from './components/views/Projects.vue';
 export default {
-  components: { Banner, TableContent, Skills },
+  components: { Banner, TableContent, Skills, Projects },
 };
 </script>
 
@@ -39,12 +39,12 @@ export default {
 }
 .table-container {
   position: static;
-  padding: 1vh 1vw;
-  /* width: 10%; */
+  padding: 7vh 2vw;
+  width: 10%;
   /* background-color: rgb(171, 201, 255); */
 }
 .views-container {
-  width: 90%;
+  width: 100%;
   /* width: 80%; */
 }
 </style>

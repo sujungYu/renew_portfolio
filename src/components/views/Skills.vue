@@ -1,5 +1,6 @@
 <template>
   <div>
+    <head-line-form>Skills</head-line-form>
     <nav class="nav">
       <ul>
         <li class="li">
@@ -73,7 +74,12 @@
 </template>
 
 <script>
-export default {};
+import HeadLineForm from '@/components/common/HeadLineForm.vue';
+export default {
+  components: {
+    HeadLineForm,
+  },
+};
 </script>
 
 <style scoped>
@@ -96,6 +102,7 @@ h1 {
   display: inline-block;
   font-size: 2.2rem;
   margin: 1vh auto;
+  font-family: 'Rubik', sans-serif;
   /* border: 3px solid rgb(79, 152, 202); */
   background-color: rgb(79, 152, 202);
   padding: 1vh 1vw;
@@ -105,10 +112,12 @@ h1 {
 h2 {
   font-size: 1.4rem;
   margin: 1vh auto;
+  font-family: 'Rubik', sans-serif;
   background-color: rgb(79, 152, 202);
   padding: 0.5vh 0.5vw;
   border-radius: 5px;
   color: white;
+  font-weight: normal;
 }
 .nav {
   /* margin: 20px auto; */

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <head-line-form>Projects</head-line-form>
     <project-form>
       <h2 slot="title">코로나19 웹사이트</h2>
       <span slot="tech">moment.js</span>
@@ -43,10 +44,12 @@
 </template>
 
 <script>
+import HeadLineForm from '../common/HeadLineForm.vue';
 import ProjectForm from '../common/ProjectForm.vue';
 export default {
   components: {
     ProjectForm,
+    HeadLineForm,
   },
 };
 </script>
