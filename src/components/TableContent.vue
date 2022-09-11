@@ -13,13 +13,11 @@
         <span>Projects</span>
         <ul>
           <li><i class="fa-solid fa-circle"></i> 코로나19 웹사이트</li>
-          <li><i class="fa-solid fa-circle"></i> offco 웹앱</li>
-          <li><i class="fa-solid fa-circle"></i> 3355 웹앱</li>
-          <li><i class="fa-solid fa-circle"></i> news 웹</li>
-          <li>
-            <i class="fa-solid fa-circle"></i> 학습 노트 CRUD 애플리케이션
-          </li>
-          <li><i class="fa-solid fa-circle"></i> 포트폴리오</li>
+          <li><i class="fa-solid fa-circle"></i> offco 애플리케이션</li>
+          <li><i class="fa-solid fa-circle"></i> 3355 애플리케이션</li>
+          <li><i class="fa-solid fa-circle"></i> news 웹사이트</li>
+          <li><i class="fa-solid fa-circle"></i> 학습 노트 애플리케이션</li>
+          <li><i class="fa-solid fa-circle"></i> 포트폴리오 웹사이트</li>
         </ul>
       </div>
     </nav>
@@ -38,15 +36,36 @@ ul {
 }
 li {
   font-size: 1.3rem;
+  margin-bottom: 0.5vh;
   font-family: 'Noto Sans KR', sans-serif;
   /* font-weight: normal; */
 }
+.class {
+  margin-bottom: 3vh;
+}
 span {
-  font-family: 'Rubik', sans-serif;
-  font-size: 2rem;
+  position: relative;
+  font-family: 'Kanit', sans-serif;
+  /* display: inline-block; */
+  font-size: 2.3rem;
+  /* width: 100%; */
+  color: rgb(54, 79, 107);
+}
+.class span::after {
+  content: '';
+  /* display: inline-block; */
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  /* bottom: 21px; */
+  top: 23px;
+  width: 100%;
+  height: 4px;
+  /* opacity: 1; */
+  background-color: rgb(252, 81, 133);
 }
 .fa-circle {
   font-size: 1rem;
-  color: rgb(79, 152, 202);
+  color: rgb(54, 79, 107);
 }
 </style>

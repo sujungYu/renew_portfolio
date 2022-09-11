@@ -11,24 +11,27 @@ export default {};
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans+KR:wght@400;900&family=Rubik:wght@500&display=swap');
 .headline-container h1 {
-  display: inline-block;
-  font-size: 6rem;
-  font-family: 'Rubik', sans-serif;
+  position: relative;
+  /* display: inline-block; */
+  font-size: 7rem;
+  font-family: 'Kanit', sans-serif;
   font-weight: bold;
+  color: rgb(54, 79, 107);
   /* border-bottom: px solid rgb(79, 152, 202); */
 }
 .headline-container h1::after {
   content: '';
-  display: inline-block;
+  /* display: inline-block; */
   position: absolute;
   z-index: -1;
   left: 0;
-  top: 110px;
+  bottom: 20px;
+  /* top: 60px; */
   width: 90%;
-  height: 8px;
+  height: 10px;
   /* opacity: 1; */
-  background-color: rgb(79, 152, 202);
-  animation: typing 1s 2s backwards;
+  background-color: rgb(252, 81, 133);
 }
 </style>

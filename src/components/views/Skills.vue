@@ -102,18 +102,18 @@ h1 {
   display: inline-block;
   font-size: 2.2rem;
   margin: 1vh auto;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Kanit', sans-serif;
   /* border: 3px solid rgb(79, 152, 202); */
-  background-color: rgb(79, 152, 202);
-  padding: 1vh 1vw;
+  background-color: rgb(54, 79, 107);
+  padding: 0.5vh 0.5vw;
   border-radius: 5px;
   color: white;
 }
 h2 {
   font-size: 1.4rem;
   margin: 1vh auto;
-  font-family: 'Rubik', sans-serif;
-  background-color: rgb(79, 152, 202);
+  font-family: 'Kanit', sans-serif;
+  background-color: rgb(54, 79, 107);
   padding: 0.5vh 0.5vw;
   border-radius: 5px;
   color: white;

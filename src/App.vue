@@ -31,20 +31,26 @@ export default {
 .banner {
   width: 100%;
   height: 100vh;
-  background-color: rgb(239, 255, 251);
+  background-color: rgb(245, 245, 245);
 }
 .container {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  /* justify-content: space-between; */
+  /* position: relative; */
 }
 .table-container {
-  position: static;
-  padding: 7vh 2vw;
+  position: sticky;
+  padding: 10vh 2vw;
   width: 10%;
+  height: 100vh;
+  top: 0vh;
+  /* background-color: red; */
   /* background-color: rgb(171, 201, 255); */
 }
 .views-container {
-  width: 100%;
+  width: 90%;
+  /* height: 200vh; */
   /* width: 80%; */
 }
 </style>

@@ -31,8 +31,9 @@ export default {};
 
 <style scoped>
 .button-container {
-  position: absolute;
-  bottom: 5vh;
+  position: relative;
+  margin: 30px auto;
+  /* bottom: 5vh; */
   /* right: 1vw; */
   width: 100%;
   /* height: 100%; */
@@ -74,7 +75,7 @@ li {
   font-size: 1.8rem;
   width: 5rem;
   height: 5rem;
-  border: 2px solid black;
+  border: 2px solid rgb(54, 79, 107);
   background-color: white;
   border-radius: 50px;
   display: flex;
