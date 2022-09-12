@@ -32,7 +32,7 @@ export default {};
 <style scoped>
 .button-container {
   position: relative;
-  margin: 30px auto;
+  /* margin: 30px auto; */
   /* bottom: 5vh; */
   /* right: 1vw; */
   width: 100%;

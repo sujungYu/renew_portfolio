@@ -118,7 +118,7 @@ export default {};
 }
 
 .arc-transparent {
-  background: white;
+  background: rgb(245, 245, 245);
   clip: rect(0 70px 35px 0);
   height: 70px;
   margin-left: -35px;

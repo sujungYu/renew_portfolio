@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="skills-container">
     <head-line-form>Skills</head-line-form>
     <nav class="nav">
       <ul>
@@ -91,6 +91,9 @@ export default {
   padding: 0 auto; */
   border: 0 none;
 }
+.skills-container {
+  height: 100vh;
+}
 img {
   height: 9vh;
   width: auto;
@@ -108,6 +111,7 @@ h1 {
   padding: 0.5vh 0.5vw;
   border-radius: 5px;
   color: white;
+  letter-spacing: 2px;
 }
 h2 {
   font-size: 1.4rem;
@@ -118,6 +122,7 @@ h2 {
   border-radius: 5px;
   color: white;
   font-weight: normal;
+  letter-spacing: 1px;
 }
 .nav {
   /* margin: 20px auto; */
@@ -128,11 +133,11 @@ h2 {
 
 .nav ul {
   position: relative;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .nav li {
   position: relative;
-  padding: 3vh 1vw;
+  padding: 5vh 1vw;
   float: left;
 
   text-align: center;
@@ -146,7 +151,7 @@ h2 {
   top: 0;
   right: 50%;
   width: 50%;
-  height: 20px;
+  height: 30px;
   border-top: 3px solid rgb(39, 39, 39);
 }
 
@@ -185,6 +190,6 @@ h2 {
   left: 50%;
   border-left: 3px solid rgb(39, 39, 39);
   width: 0;
-  height: 30px;
+  height: 40px;
 }
 </style>

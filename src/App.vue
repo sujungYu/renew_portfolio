@@ -8,26 +8,41 @@
         <table-content></table-content>
       </div>
       <div class="views-container" id="skills">
-        <!-- <introduce></introduce> -->
         <skills></skills>
         <projects></projects>
+        <education></education>
       </div>
     </div>
+    <information></information>
   </div>
 </template>
 
 <script>
 import TableContent from './components/TableContent.vue';
 import Banner from './components/views/Banner.vue';
-// import Introduce from './components/views/Introduce.vue';
 import Skills from './components/views/Skills.vue';
 import Projects from './components/views/Projects.vue';
+import Education from './components/views/Education.vue';
+import Information from './components/views/Information.vue';
 export default {
-  components: { Banner, TableContent, Skills, Projects },
+  components: {
+    Banner,
+    TableContent,
+    Skills,
+    Projects,
+    Education,
+    Information,
+  },
 };
 </script>
 
 <style>
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0 auto;
+}
 .banner {
   width: 100%;
   height: 100vh;
@@ -53,4 +68,8 @@ export default {
   /* height: 200vh; */
   /* width: 80%; */
 }
+/* a {
+  text-decoration: none;
+  cursor: pointer;
+} */
 </style>

@@ -13,7 +13,7 @@
         <slot name="update"> </slot>
       </div>
       <div class="icon-container">
-        <i class="fa-brands fa-github"></i>
+        <slot name="git"></slot>
         <i class="fa-solid fa-globe"></i>
         <i class="fa-solid fa-camera"></i>
       </div>
@@ -49,7 +49,7 @@ export default {};
 .title-container h2 {
   margin: 0.5vh 0.5vw;
 }
-.tech-container {
+.tech-container li {
   display: inline-block;
   background-color: rgb(252, 81, 133);
   border-radius: 15px;

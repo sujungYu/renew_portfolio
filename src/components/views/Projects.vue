@@ -2,9 +2,17 @@
   <div>
     <head-line-form>Projects</head-line-form>
     <div class="project-container">
-      <project-form>
+      <project-form data-aos="fade-right">
         <h2 slot="title">코로나19 웹사이트</h2>
-        <span slot="tech">moment.js</span>
+        <span slot="tech">
+          <ul class="tech">
+            <li>vue</li>
+            <li>vue-router</li>
+            <li>d3.js</li>
+            <li>moment.js</li>
+            <li>vue-chartjs</li>
+          </ul>
+        </span>
         <h3 slot="num">개인프로젝트</h3>
         <h4 slot="explain">
           <ul>
@@ -14,42 +22,49 @@
             </li>
             <li>
               <i class="fa-solid fa-check"></i> 공공 데이터에서 제공하는 open
-              api를 활용하여 시, 도별 코로나 확진자/백신 접종자 확인 가능하도록
-              구현
+              api를 활용하여 시, 도별 코로나/백신 정보를 확인 가능하도록 구현
             </li>
             <li>
-              <i class="fa-solid fa-check"></i> 최근 7일내 확진자를 한 눈에 볼
-              수 있도록 그래프로 구현
+              <i class="fa-solid fa-check"></i> 최근 7일내 코로나 확진자 수를 한
+              눈에 볼 수 있도록 그래프로 구현
             </li>
             <li>
               <i class="fa-solid fa-check"></i>
-              moment.js를 활용하여 날짜 변동에 따른 데이터 자동 업로드가
+              moment 라이브러리를 활용하여 날짜 변동에 따른 데이터 자동 업로드가
               가능하도록 구현
             </li>
             <li>
-              <i class="fa-solid fa-check"></i> d3를 활용하여 우리나라 지도
-              topojoson 데이터를 시각화
+              <i class="fa-solid fa-check"></i> d3 라이브러리를 활용하여
+              우리나라 지도 topojoson 데이터를 시각화하여 구현
             </li>
-            <!-- <li><i class="fa-solid fa-check"></i> d3를 활용해 데이터 시각화</li> -->
-            <!-- <li>
-              <i class="fa-solid fa-check"></i> vue-router을 이용해 시, 도별
-              코로나 확진자 및 백신 접종자 확인 가능
-            </li> -->
-            <!-- <li>
-              <i class="fa-solid fa-check"></i> vue-chartjs을 이용해 최근 7일내
-              확진자를 한 눈에 볼 수 있도록 구현
-            </li> -->
-            <!-- <li>
-              <i class="fa-solid fa-check"></i>xml-js를 이용해 xml 데이터를
-              json으로 파싱
-            </li> -->
           </ul>
         </h4>
-        <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
+        <a slot="git" href="https://github.com/sujungYu/covid19_web"
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </project-form>
-      <project-form>
+
+      <project-form data-aos="fade-left">
         <h2 slot="title">offco 애플리케이션</h2>
-        <span slot="tech">moment.js</span>
+        <span slot="tech">
+          <ul class="tech">
+            <li>
+              vue
+            </li>
+            <li>
+              vuex
+            </li>
+            <li>
+              vue-router
+            </li>
+            <li>
+              moment.js
+            </li>
+            <li>
+              vue-chartjs
+            </li>
+          </ul>
+        </span>
         <h3 slot="num">팀 프로젝트</h3>
         <h4 slot="explain">
           <ul>
@@ -93,9 +108,20 @@
         </h4>
         <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
       </project-form>
-      <project-form>
+      <project-form data-aos="fade-right">
         <h2 slot="title">3355 애플리케이션</h2>
-        <span slot="tech">moment.js</span>
+        <span slot="tech">
+          <ul class="tech">
+            <li>vue</li>
+            <li>vuex</li>
+            <li>vue-router</li>
+            <li>eslint</li>
+            <li>prettier</li>
+            <li>sockjs.client</li>
+            <li>webstomp-client</li>
+            <li>vue2-datepicker</li>
+          </ul>
+        </span>
         <h3 slot="num">팀 프로젝트</h3>
         <h4 slot="explain">
           <ul>
@@ -149,12 +175,12 @@
         </h4>
         <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
       </project-form>
-      <project-form>
+      <project-form data-aos="fade-left">
         <h2 slot="title">포트폴리오 웹사이트</h2>
         <span slot="tech">moment.js</span>
         <h3 slot="num">개인 프로젝트</h3>
         <h4 slot="explain">
-          <ul>
+          <ul class="tech">
             <li><i class="fa-solid fa-check"></i> NVN으로 Node.js 버전 관리</li>
             <li><i class="fa-solid fa-check"></i> MongoDB</li>
             <li><i class="fa-solid fa-check"></i>ESLint</li>
@@ -178,7 +204,7 @@
         </h4>
         <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
       </project-form>
-      <project-form>
+      <project-form data-aos="fade-right">
         <h2 slot="title">news 웹사이트</h2>
         <span slot="tech">moment.js</span>
         <h3 slot="num">개인 프로젝트</h3>
@@ -216,7 +242,7 @@
         </h4>
         <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
       </project-form>
-      <project-form>
+      <project-form data-aos="fade-left">
         <h2 slot="title">학습 노트 애플리케이션</h2>
         <span slot="tech">moment.js</span>
         <h3 slot="num">개인 프로젝트</h3>
@@ -277,6 +303,20 @@ export default {
   display: flex;
   justify-content: flex-end;
 }
+span {
+  display: block;
+}
+.tech li {
+  margin: 2px 1px;
+}
+li {
+  display: flex;
+}
+li i {
+  margin-right: 2px;
+  margin-top: 3px;
+}
+
 /* .project-container project-form:nth-child(even) {
   background-color: red;
 } */
