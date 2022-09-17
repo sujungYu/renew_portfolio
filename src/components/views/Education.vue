@@ -22,21 +22,30 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 h2 {
   font-size: 3rem;
   font-family: 'Noto Sans KR', sans-serif;
   color: rgb(54, 79, 107);
+  margin-left: 2vw;
+  @include mobile {
+    font-size: 2.5rem;
+    margin-left: 10vw;
+  }
 }
 h3 {
   font-size: 1.8rem;
   font-family: 'Noto Sans KR', sans-serif;
   color: rgb(54, 79, 107);
+  @include mobile {
+    font-size: 1.5rem;
+  }
 }
 ul {
   list-style: none;
 }
 .edu-container {
   margin-bottom: 10vh;
+  width: 100%;
 }
 </style>

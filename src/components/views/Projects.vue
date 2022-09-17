@@ -48,29 +48,19 @@
         <h2 slot="title">offco 애플리케이션</h2>
         <span slot="tech">
           <ul class="tech">
-            <li>
-              vue
-            </li>
-            <li>
-              vuex
-            </li>
-            <li>
-              vue-router
-            </li>
-            <li>
-              moment.js
-            </li>
-            <li>
-              vue-chartjs
-            </li>
+            <li>vue</li>
+            <li>vuex</li>
+            <li>vue-router</li>
+            <li>moment.js</li>
+            <li>vue-chartjs</li>
           </ul>
         </span>
         <h3 slot="num">팀 프로젝트</h3>
         <h4 slot="explain">
           <ul>
             <li>
-              <i class="fa-solid fa-check"></i> 기존 sns의 단점을 보완한
-              단체모임 sns을 제공하기 위해 개발
+              <i class="fa-solid fa-check"></i>
+              기존 sns의 단점을 보완한 단체모임 sns을 제공하기 위해 개발
             </li>
             <li>
               <i class="fa-solid fa-check"></i>백엔드 1명, 프론트엔드 1명이서
@@ -87,7 +77,7 @@
               <i class="fa-solid fa-check"></i> 초대링크로 단체 모임 sns에
               참여할 수 있도록 구현
             </li>
-            <li><i class="fa-solid fa-check"></i>자바스크립트로 캘린더 구현</li>
+            <!-- <li><i class="fa-solid fa-check"></i>자바스크립트로 캘린더 구현</li> -->
             <!-- <li>
               <i class="fa-solid fa-check"></i> localStorage를 이용해 로그인
               유지 기능 구현
@@ -98,7 +88,7 @@
             </li> -->
             <li>
               <i class="fa-solid fa-check"></i> 기능 별로 store을 모듈화하여
-              분리해서 관리
+              분리해서 관리하도록 구현
             </li>
             <!-- <li>
               <i class="fa-solid fa-check"></i>vue-router을 활용하여 SPA 구현
@@ -126,7 +116,7 @@
         <h4 slot="explain">
           <ul>
             <li>
-              <i class="fa-solid fa-check"></i> 지역별로 스터디를 관리하고
+              <i class="fa-solid fa-check"></i> 지역별 스터디를 관리하고
               제공하기 위해 개발
             </li>
             <li>
@@ -155,58 +145,57 @@
               <i class="fa-solid fa-check"></i> Prettier을 활용해 코드스타일을
               일관되게 유지
             </li>
-            <!-- <li>
-              <i class="fa-solid fa-check"></i>vue-router을 활용하여 SPA 구현
-            </li> -->
-            <!-- <li>
-              <i class="fa-solid fa-check"></i>vue2-datepicker를 활용해 스터디
-              기간 구현
-            </li> -->
-            <!-- <li>
-              <i class="fa-solid fa-check"></i> 요청, 응답만 받는 api를 분리하여
-              작성
-            </li> -->
             <li>
               <i class="fa-solid fa-check"></i> 코드 스플리팅을 활용해 페이지
               로딩 속도를 개선
             </li>
-            <!-- <li><i class="fa-solid fa-check"></i>views___</li> -->
           </ul>
         </h4>
         <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
       </project-form>
+
       <project-form data-aos="fade-left">
         <h2 slot="title">포트폴리오 웹사이트</h2>
-        <span slot="tech">moment.js</span>
+        <span slot="tech">
+          <ul class="tech">
+            <li>vue</li>
+            <li>aos</li>
+            <li>eslint</li>
+            <li>prettier</li>
+          </ul>
+        </span>
         <h3 slot="num">개인 프로젝트</h3>
         <h4 slot="explain">
           <ul class="tech">
-            <li><i class="fa-solid fa-check"></i> NVN으로 Node.js 버전 관리</li>
-            <li><i class="fa-solid fa-check"></i> MongoDB</li>
-            <li><i class="fa-solid fa-check"></i>ESLint</li>
-            <li><i class="fa-solid fa-check"></i> Prettier</li>
-            <li><i class="fa-solid fa-check"></i> 코드 스플리팅</li>
-            <li><i class="fa-solid fa-check"></i> API 설정 공통화</li>
-            <li><i class="fa-solid fa-check"></i> env</li>
-            <li><i class="fa-solid fa-check"></i> 코드 스플리팅</li>
-            <li><i class="fa-solid fa-check"></i> HTTP 헤더에 토큰 값</li>
-            <li><i class="fa-solid fa-check"></i> 코드 스플리팅</li>
-            <li><i class="fa-solid fa-check"></i> 액시오스 인터셉터</li>
-            <li><i class="fa-solid fa-check"></i> cookie</li>
-            <li><i class="fa-solid fa-check"></i> 페이지별 인증 권한 설정</li>
-            <li><i class="fa-solid fa-check"></i> 테스트 코드</li>
-            <li><i class="fa-solid fa-check"></i> 액시오스 인터셉터</li>
-
             <li>
-              <i class="fa-solid fa-check"></i>vue-router을 활용하여 SPA 구현
+              <i class="fa-solid fa-check"></i> 프론트엔드 포트폴리오를 만들기
+              위해 개발
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>ESLint를 활용해 코드를 일관성
+              있게 작성
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Prettier을 활용해 코드스타일을
+              일관되게 유지
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i> Aos 라이브러리를 활용하여 스크롤
+              움직임에 따른 애니메이션 구현
             </li>
           </ul>
         </h4>
         <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
       </project-form>
+
       <project-form data-aos="fade-right">
         <h2 slot="title">news 웹사이트</h2>
-        <span slot="tech">moment.js</span>
+        <span slot="tech">
+          <ul class="tech">
+            <li>vue</li>
+            <li>vuex</li>
+          </ul>
+        </span>
         <h3 slot="num">개인 프로젝트</h3>
         <h4 slot="explain">
           <ul>
@@ -242,9 +231,19 @@
         </h4>
         <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
       </project-form>
+
       <project-form data-aos="fade-left">
         <h2 slot="title">학습 노트 애플리케이션</h2>
-        <span slot="tech">moment.js</span>
+        <span slot="tech">
+          <ul class="tech">
+            <li>vue</li>
+            <li>vuex</li>
+            <li>nvm</li>
+            <li>mongoDB cloud</li>
+            <li>eslint</li>
+            <li>prettier</li>
+          </ul>
+        </span>
         <h3 slot="num">개인 프로젝트</h3>
         <h4 slot="explain">
           <ul>
@@ -270,10 +269,6 @@
             <li><i class="fa-solid fa-check"></i> 페이지별 인증 권한 설정</li>
             <li><i class="fa-solid fa-check"></i> JEST로 테스트 코드 작성</li>
             <li><i class="fa-solid fa-check"></i> 액시오스 인터셉터</li>
-
-            <!-- <li>
-              <i class="fa-solid fa-check"></i>vue-router을 활용하여 SPA 구현
-            </li> -->
           </ul>
         </h4>
         <h5 slot="update">최종 업데이트 - 2021.1.1</h5>
@@ -293,15 +288,21 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .project-container {
   /* display: flex; */
   /* flex-direction: column; */
   width: 90%;
+  @include mobile {
+    width: 100%;
+  }
 }
 .project-container div:nth-child(even) {
   display: flex;
   justify-content: flex-end;
+  @include mobile {
+    justify-content: center;
+  }
 }
 span {
   display: block;

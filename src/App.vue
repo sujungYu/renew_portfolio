@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 html {
   font-size: 10px;
 }
@@ -51,6 +51,7 @@ body {
 .container {
   display: flex;
   flex-flow: row nowrap;
+
   /* justify-content: space-between; */
   /* position: relative; */
 }
@@ -60,11 +61,15 @@ body {
   width: 10%;
   height: 100vh;
   top: 0vh;
-  /* background-color: red; */
-  /* background-color: rgb(171, 201, 255); */
+  @include mobile {
+    display: none;
+  }
 }
 .views-container {
   width: 90%;
+  @include mobile {
+    width: 100vw;
+  }
   /* height: 200vh; */
   /* width: 80%; */
 }

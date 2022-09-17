@@ -25,7 +25,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .projectform-container {
   position: relative;
   margin-bottom: 10vh;
@@ -33,6 +33,10 @@ export default {};
   border: 3px solid rgb(54, 79, 107);
   border-radius: 15px;
   width: 50%;
+  @include mobile {
+    width: 80%;
+    margin: 5vh auto;
+  }
 }
 .title-container {
   position: absolute;

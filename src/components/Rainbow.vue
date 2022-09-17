@@ -14,7 +14,7 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss">
 @-webkit-keyframes spin {
   from {
     transform: rotateZ(-180deg);
@@ -40,6 +40,11 @@ export default {};
   top: 30%;
   transform: translateX(-50%) translateY(-25%);
   width: 490px;
+  @include mobile {
+    width: 100%;
+    top: 20%;
+    // left: 48%;
+  }
 }
 
 .arc {
@@ -60,6 +65,13 @@ export default {};
   width: 490px;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
+  @include mobile {
+    clip: rect(0 350px 175px 0);
+    height: 350px;
+    margin-left: -175px;
+    margin-top: -175px;
+    width: 350px;
+  }
 }
 
 .arc-orange {
@@ -71,6 +83,13 @@ export default {};
   width: 420px;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  @include mobile {
+    clip: rect(0 280px 140px 0);
+    height: 280px;
+    margin-left: -140px;
+    margin-top: -140px;
+    width: 280px;
+  }
 }
 
 .arc-yellow {
@@ -82,6 +101,13 @@ export default {};
   width: 350px;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
+  @include mobile {
+    clip: rect(0 210px 105px 0);
+    height: 210px;
+    margin-left: -105px;
+    margin-top: -105px;
+    width: 210px;
+  }
 }
 
 .arc-green {
@@ -93,6 +119,13 @@ export default {};
   width: 280px;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
+  @include mobile {
+    clip: rect(0 140px 70px 0);
+    height: 140px;
+    margin-left: -70px;
+    margin-top: -70px;
+    width: 140px;
+  }
 }
 
 .arc-blue {
@@ -104,6 +137,9 @@ export default {};
   width: 210px;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  @include mobile {
+    display: none;
+  }
 }
 
 .arc-purple {
@@ -115,6 +151,9 @@ export default {};
   width: 140px;
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
+  @include mobile {
+    display: none;
+  }
 }
 
 .arc-transparent {

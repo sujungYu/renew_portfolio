@@ -1,75 +1,21 @@
 <template>
   <div class="skills-container">
     <head-line-form>Skills</head-line-form>
-    <nav class="nav">
-      <ul>
-        <li class="li">
-          <h1>My Skills</h1>
-          <!-- <img class="me" src="@/assets/images/유수정.png" /> -->
-          <ul>
-            <li>
-              <h1>Design</h1>
-              <ul>
-                <li>
-                  <img src="@/assets/images/photoshop.png" />
-                  <h2>photoshop</h2>
-                </li>
-                <li>
-                  <img src="@/assets/images/illustrator.png" />
-                  <h2>illust</h2>
-                </li>
-                <li>
-                  <img src="@/assets/images/figma.png" />
-                  <h2>figma</h2>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h1>Frontend</h1>
-              <ul>
-                <li>
-                  <img src="@/assets/images/html.png" />
-                  <h2>html</h2>
-                </li>
-                <li>
-                  <img src="@/assets/images/css.png" />
-                  <h2>css</h2>
-                </li>
-                <li>
-                  <img src="@/assets/images/javascript.png" />
-                  <h2>javascript</h2>
-                </li>
-                <li>
-                  <img src="@/assets/images/typescript.png" />
-                  <h2>typescript</h2>
-                </li>
-                <li>
-                  <img src="@/assets/images/vue.png" />
-                  <h2>vue</h2>
-                </li>
-                <li>
-                  <img src="@/assets/images/sass.png" />
-                  <h2>sass</h2>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h1>Backend</h1>
-              <ul>
-                <li>
-                  <img src="@/assets/images/node-js.png" />
-                  <h2>node-js</h2>
-                </li>
-                <li>
-                  <img src="@/assets/images/mysql.png" />
-                  <h2>mysql</h2>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <template v-if="pc">
+      <div>
+        <img class="skills" src="@/assets/images/skills.png" />
+      </div>
+    </template>
+
+    <template v-if="mobile">
+      <div class="mobile-container">
+        <img class="front" src="@/assets/images/front.png" />
+        <div class="sub">
+          <img class="design" src="@/assets/images/design.png" />
+          <img class="back" src="@/assets/images/back.png" />
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -79,10 +25,47 @@ export default {
   components: {
     HeadLineForm,
   },
+  data() {
+    return {
+      mobile: false,
+      pc: false,
+    };
+  },
+  created() {
+    if (window.innerWidth < 380) {
+      this.pc = false;
+      this.mobile = true;
+    } else {
+      this.mobile = false;
+      this.pc = true;
+    }
+  },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.skills {
+  width: 90%;
+  height: auto;
+}
+.design,
+.back {
+  // height: 10vh;
+  height: 26vh;
+  width: auto;
+}
+.front {
+  width: 100%;
+  margin-bottom: 10vh;
+}
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+}
+.sub {
+  display: flex;
+  justify-content: space-around;
+}
 * {
   position: relative;
   margin: 0;
@@ -93,11 +76,14 @@ export default {
 }
 .skills-container {
   height: 100vh;
+  @include mobile {
+    height: initial;
+  }
 }
-img {
+/* img {
   height: 9vh;
   width: auto;
-}
+} */
 .me {
   height: 20vh;
 }
