@@ -1,24 +1,9 @@
-# susu_portfolio
+<div align="center">
+<h1>유수정의 포트폴리오</h1>
+</div>
 
-## Project setup
-```
-npm install
-```
+### ScreenShot
+<p>
+<img src="https://user-images.githubusercontent.com/87973617/197479977-7fbd6a11-2e03-4058-9c3b-e1e6d3b1369f.png" width=auto height="400"/>
+</p>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
